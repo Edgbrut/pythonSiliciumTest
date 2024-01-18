@@ -1,0 +1,28 @@
+Enter System
+Start Test
+Current URL: https://demoqa.com/automation-practice-form
+URL Assertion Confirmed
+Input First Name: Sylvester
+Input Last Name: Stallone
+Input Email: 'stallone@yahoo.com'
+Button Name Assertion: Male
+Selected: Male
+Input Phone Number: '0123456789'
+Click on Calendar
+Select a Year: '1976'
+Select a Month: 'October'
+Select a Date: '22'
+Subject Field: 'Comp'
+Subject: 'Computer Science'
+File Uploaded Successfully
+Input Address: 'Russian Federation, city of Moscow'
+Click on State Dropdown
+State: 'Uttar Pradesh'
+Click on City Dropdown
+City: 'Lucknow'
+Click on Submit Button
+Page Name Assertion: Thanks for submitting the form
+Screenshot Complete: screenshot_2024.01.18.13.01.png
+Thanks for submitting the form!
+Finish Test
+Exit System

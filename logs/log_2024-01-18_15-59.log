@@ -1,0 +1,11 @@
+
+-----
+Test: tests/test_registration_page.py::TestRegistrationPage::test_registration_page (call)
+Start time: 2024-01-18 15:59:42.324896
+Start name method: submit_application
+
+End time: 2024-01-18 16:01:22.459087
+End name method: submit_application
+URL: https://demoqa.com/automation-practice-form
+
+-----
