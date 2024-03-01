@@ -1,5 +1,5 @@
 import time
-
+import os
 import allure
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
@@ -45,7 +45,7 @@ class Student_registration_page(Base):
     Email = "stallone@yahoo.com"
     Phone_Number = "0123456789"
     Subject = "Comp"
-    File_Upload_Path = "C:/Users/Lenovo/PycharmProjects/pythonSiliciumTest/file_folder/Simbirsoft.jpg"
+    
     Address = "Russian Federation, city of Moscow"
 
     """Getters"""
@@ -194,7 +194,7 @@ class Student_registration_page(Base):
 
     # Upload a File
     def input_registration_file_upload(self, file_upload):
-        self.get_registration_file_upload().send_keys(file_upload)
+        self.get_registration_file_upload().send_keys(f"{os.getcwd()}/file_folder/Simbirsoft.jpg")
         print("File Uploaded Successfully")
 
     # Current Address Field
@@ -280,7 +280,7 @@ class Student_registration_page(Base):
             # self.click_registration_hobbies_sport()
 
             # Upload Image
-            self.input_registration_file_upload(self.File_Upload_Path)
+            self.input_registration_file_upload()
             time.sleep(2)
             # Input Address
             self.input_registration_address(self.Address)
