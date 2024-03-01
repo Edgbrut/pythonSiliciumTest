@@ -12,6 +12,8 @@ def set_up(request):
     capabilities = DesiredCapabilities.CHROME.copy()
     capabilities["pageLoadStrategy"] = "eager"
     options = webdriver.ChromeOptions()
+    prefs = {"download.default_directory": f"{os.getcwd()}/file_folder"}
+    options.add_experimental_option("prefs", prefs)
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
     options.add_experimental_option("detach", True)
     g = Service()
