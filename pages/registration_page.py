@@ -193,7 +193,7 @@ class Student_registration_page(Base):
         self.get_btn_selected(self.get_registration_hobbies_sport(), "Sports")
 
     # Upload a File
-    def input_registration_file_upload(self, file_upload):
+    def input_registration_file_upload(self):
         self.get_registration_file_upload().send_keys(f"{os.getcwd()}/file_folder/Simbirsoft.jpg")
         print("File Uploaded Successfully")
 
